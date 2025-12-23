@@ -1,25 +1,25 @@
-# Klasifikasi Kategori Judul Berita Detik
 
-Repository ini berisi implementasi sistem **klasifikasi kategori judul berita** dari website [detik.com](https://www.detik.com) menggunakan tiga model utama: **LSTM**, **DistilBERT**, dan **IndoBERT**. Dataset diperoleh melalui scrapping website Detik dengan lima kategori utama: Politik, Ekonomi, Olahraga, Selebritas, dan Teknologi.
+
+# Klasifikasi Kategori Judul Berita Detik 📰
+
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+Repository ini berisi sistem **klasifikasi kategori judul berita** dari website [detik.com](https://www.detik.com) menggunakan tiga model utama: **LSTM**, **DistilBERT**, dan **IndoBERT**. Dataset diperoleh melalui scrapping website Detik dengan lima kategori utama: Politik, Ekonomi, Olahraga, Selebritas, dan Teknologi.
 
 ---
 
 ## 🔹 Fitur Utama
 
-* Klasifikasi judul berita menjadi **5 kategori**:
-
-  * Politik
-  * Ekonomi
-  * Olahraga
-  * Selebritas
-  * Teknologi
+* Klasifikasi judul berita menjadi **5 kategori**: Politik, Ekonomi, Olahraga, Selebritas, Teknologi
 * Menggunakan tiga model:
 
   * **LSTM**
-  * **DistilBERT** (tanpa file `.bin` karena ukuran model terlalu besar)
-  * **IndoBERT** (tanpa file `.bin` karena ukuran model terlalu besar)
+  * **DistilBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive](https://drive.google.com/drive/folders/16djD5orNWm4Gc_V9fphpyHTJQRVMfv4u?usp=drive_link))
+  * **IndoBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive](https://drive.google.com/drive/folders/1Q2l9RfFoh0Ek0dgD0Takr-FeKqeYSrzm?usp=drive_link))
 * Dataset sudah dibersihkan dan siap untuk training dan evaluasi
-* Mendukung prediksi judul berita baru melalui Jupyter Notebook atau Streamlit
+* Mendukung prediksi judul berita baru melalui **Jupyter Notebook** atau **Streamlit dashboard**
 
 ---
 
@@ -32,7 +32,7 @@ Klasifikasi_Kategori_Berita/
 │  ├─ raw/
 │  │  └─ berita_detik_5_kategori.csv       # Dataset mentah hasil scrapping
 │  └─ processed/
-│     └─ berita_clean.csv                  # Dataset sudah dibersihkan
+│     └─ berita_clean.csv                  # Dataset bersih
 │
 ├─ models/
 │  ├─ lstm/
@@ -57,6 +57,9 @@ Klasifikasi_Kategori_Berita/
 │  ├─ 01_UAP_KLASIFIKASI_KATEGORI_JUDUL_BERITA.ipynb
 │  └─ 02_UAP_DASHBOARD_BERITA.ipynb
 │
+├─ screenshots/
+│  └─ dashboard_placeholder.png            # Ganti dengan screenshot asli dashboard
+│
 └─ README.md
 ```
 
@@ -79,19 +82,19 @@ kategori_urls = {
 * **File penting:**
 
   * `berita_detik_5_kategori.csv` → dataset mentah
-  * `berita_clean.csv` → dataset sudah dibersihkan (stopwords, case-folding, tokenisasi)
+  * `berita_clean.csv` → dataset bersih (stopwords, case-folding, tokenisasi)
 
 ---
 
 ## 🛠 Model
 
-| Model          | Deskripsi                                                                | Akurasi |
-| -------------- | ------------------------------------------------------------------------ | ------- |
-| **LSTM**       | Deep learning untuk text sequence menggunakan tokenizer khusus LSTM      | 84%     |
-| **DistilBERT** | Pretrained transformer ringan untuk Bahasa Indonesia (tanpa file `.bin`) | 90%     |
-| **IndoBERT**   | Pretrained transformer besar untuk Bahasa Indonesia (tanpa file `.bin`)  | 91%     |
+| Model          | Deskripsi                                                           | Akurasi | Link Download                                                         |
+| -------------- | ------------------------------------------------------------------- | ------- | --------------------------------------------------------------------- |
+| **LSTM**       | Deep learning untuk text sequence menggunakan tokenizer khusus LSTM | 84%     | Termasuk di folder `models/lstm`                                      |
+| **DistilBERT** | Pretrained transformer ringan untuk Bahasa Indonesia                | 90%     | [Download via Drive](https://drive.google.com/placeholder_distilbert) |
+| **IndoBERT**   | Pretrained transformer besar untuk Bahasa Indonesia                 | 91%     | [Download via Drive](https://drive.google.com/placeholder_indobert)   |
 
-> **Catatan:** File `.bin` untuk DistilBERT dan IndoBERT tidak diunggah karena ukuran model sangat besar. Model dapat diunduh langsung dari Hugging Face jika diperlukan.
+> **Catatan:** File `.bin` untuk DistilBERT dan IndoBERT tidak diunggah karena ukuran sangat besar. Gunakan link di atas untuk mengunduh model.
 
 ---
 
@@ -119,12 +122,12 @@ pip install -r requirements.txt
 
 ## 🧪 Penggunaan
 
-### Prediksi dan Training di Jupyter Notebook
+### 1️⃣ Jupyter Notebook
 
-* `01_UAP_KLASIFIKASI_KATEGORI_JUDUL_BERITA.ipynb` → Training, evaluasi, dan analisis performa model
+* `01_UAP_KLASIFIKASI_KATEGORI_JUDUL_BERITA.ipynb` → Training, evaluasi, analisis performa model
 * `02_UAP_DASHBOARD_BERITA.ipynb` → Demo prediksi kategori judul berita baru
 
-### Prediksi melalui Streamlit
+### 2️⃣ Streamlit Dashboard
 
 ```bash
 streamlit run app.py
@@ -134,32 +137,28 @@ streamlit run app.py
 * Pilih model: LSTM, DistilBERT, atau IndoBERT
 * Lihat prediksi kategori secara real-time
 
+#### Tampilan Dashboard:
+
+![Dashboard Streamlit](<img width="1315" height="514" alt="image" src="https://github.com/user-attachments/assets/a880ec3b-5106-4141-856f-e700f27fdb6b" />
+)
+*Ganti dengan screenshot asli dashboard Streamlit di folder `screenshots`*
+
 ---
 
 ## 📈 Evaluasi Model
 
-* **LSTM:** 84%
-* **DistilBERT:** 90%
-* **IndoBERT:** 91%
+| Model      | Akurasi |
+| ---------- | ------- |
+| LSTM       | 84%     |
+| DistilBERT | 90%     |
+| IndoBERT   | 91%     |
 
-> Akurasi dapat bervariasi tergantung preprocessing, tokenisasi, dan jumlah data.
+> Hasil akurasi dapat bervariasi tergantung preprocessing, tokenisasi, dan jumlah data.
 
----
-
-## 📝 Referensi
-
-1. Hugging Face Transformers: [https://huggingface.co/transformers/](https://huggingface.co/transformers/)
-2. TensorFlow Documentation: [https://www.tensorflow.org/](https://www.tensorflow.org/)
-3. Scikit-learn Documentation: [https://scikit-learn.org/stable/](https://scikit-learn.org/stable/)
-
----
 
 ## ⚠️ Catatan
 
 * Dataset hasil scrapping harus digunakan sesuai ketentuan penggunaan detik.com
 * Pastikan preprocessing yang sama diterapkan saat menambahkan data baru
-* Folder `models` berisi model siap pakai (LSTM lengkap, DistilBERT & IndoBERT tanpa `.bin`)
+* Folder `models` berisi model siap pakai (LSTM lengkap, DistilBERT & IndoBERT via Drive)
 
-
-
-Apakah mau aku buat versi itu juga?
