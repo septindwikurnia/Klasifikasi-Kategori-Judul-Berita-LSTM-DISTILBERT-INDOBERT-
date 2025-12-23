@@ -57,9 +57,6 @@ Klasifikasi_Kategori_Berita/
 │  ├─ 01_UAP_KLASIFIKASI_KATEGORI_JUDUL_BERITA.ipynb
 │  └─ 02_UAP_DASHBOARD_BERITA.ipynb
 │
-├─ screenshots/
-│  └─ dashboard_placeholder.png            # Ganti dengan screenshot asli dashboard
-│
 └─ README.md
 ```
 
