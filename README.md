@@ -40,6 +40,7 @@ Klasifikasi_Kategori_Berita/
 │  │  └─ label_encoder_lstm.pkl
 │  │  └─ tokenizer_lstm.json
 │  ├─ distilbert/
+│  │  ├─ config.json
 │  │  ├─ label_encoder.pkl
 │  │  ├─ tokenizer_config.json
 │  │  ├─ tokenizer.json
