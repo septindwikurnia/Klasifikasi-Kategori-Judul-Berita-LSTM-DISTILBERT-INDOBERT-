@@ -16,8 +16,8 @@ Repository ini berisi sistem **klasifikasi kategori judul berita** dari website 
 * Menggunakan tiga model:
 
   * **LSTM**
-  * **DistilBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive](https://drive.google.com/placeholder_distilbert))
-  * **IndoBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive]([https://drive.google.com/placeholder_indobert](https://drive.google.com/drive/folders/1Q2l9RfFoh0Ek0dgD0Takr-FeKqeYSrzm?usp=drive_link)))
+  * **DistilBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive] (https://drive.google.com/drive/folders/16djD5orNWm4Gc_V9fphpyHTJQRVMfv4u?usp=drive_link))
+  * **IndoBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive] (https://drive.google.com/drive/folders/1Q2l9RfFoh0Ek0dgD0Takr-FeKqeYSrzm?usp=drive_link))
 * Dataset sudah dibersihkan dan siap untuk training dan evaluasi
 * Mendukung prediksi judul berita baru melalui **Jupyter Notebook** atau **Streamlit dashboard**
 
@@ -90,8 +90,10 @@ kategori_urls = {
 | Model          | Deskripsi                                                           | Akurasi | Link Download                                                         |
 | -------------- | ------------------------------------------------------------------- | ------- | --------------------------------------------------------------------- |
 | **LSTM**       | Deep learning untuk text sequence menggunakan tokenizer khusus LSTM | 84%     | Termasuk di folder `models/lstm`                                      |
-| **DistilBERT** | Pretrained transformer ringan untuk Bahasa Indonesia                | 90%     | [Download via Drive]([https://drive.google.com/placeholder_distilbert](https://drive.google.com/drive/folders/16djD5orNWm4Gc_V9fphpyHTJQRVMfv4u?usp=drive_link)) |
-| **IndoBERT**   | Pretrained transformer besar untuk Bahasa Indonesia                 | 91%     | [Download via Drive]([https://drive.google.com/placeholder_indobert](https://drive.google.com/drive/folders/1Q2l9RfFoh0Ek0dgD0Takr-FeKqeYSrzm?usp=drive_link))   |
+| **DistilBERT** | Pretrained transformer ringan untuk Bahasa Indonesia                | 90%     | [Download via Google Drive]
+(https://drive.google.com/drive/folders/16djD5orNWm4Gc_V9fphpyHTJQRVMfv4u?usp=drive_link)) |
+| **IndoBERT**   | Pretrained transformer besar untuk Bahasa Indonesia                 | 91%     | [Download via Google Drive]
+(https://drive.google.com/drive/folders/1Q2l9RfFoh0Ek0dgD0Takr-FeKqeYSrzm?usp=drive_link))   |
 
 > **Catatan:** File `.bin` untuk DistilBERT dan IndoBERT tidak diunggah karena ukuran sangat besar. Gunakan link di atas untuk mengunduh model.
 
