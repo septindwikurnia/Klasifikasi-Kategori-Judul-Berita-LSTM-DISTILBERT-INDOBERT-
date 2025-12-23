@@ -16,8 +16,8 @@ Repository ini berisi sistem **klasifikasi kategori judul berita** dari website 
 * Menggunakan tiga model:
 
   * **LSTM**
-  * **DistilBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive](https://drive.google.com/drive/folders/16djD5orNWm4Gc_V9fphpyHTJQRVMfv4u?usp=drive_link))
-  * **IndoBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive](https://drive.google.com/drive/folders/1Q2l9RfFoh0Ek0dgD0Takr-FeKqeYSrzm?usp=drive_link))
+  * **DistilBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive] (https://drive.google.com/drive/folders/16djD5orNWm4Gc_V9fphpyHTJQRVMfv4u?usp=drive_link)
+  * **IndoBERT** (tanpa file `.bin` karena ukuran model terlalu besar, bisa diunduh via [Google Drive] (https://drive.google.com/drive/folders/1Q2l9RfFoh0Ek0dgD0Takr-FeKqeYSrzm?usp=drive_link)
 * Dataset sudah dibersihkan dan siap untuk training dan evaluasi
 * Mendukung prediksi judul berita baru melalui **Jupyter Notebook** atau **Streamlit dashboard**
 
@@ -126,24 +126,7 @@ pip install -r requirements.txt
 
 * `01_UAP_KLASIFIKASI_KATEGORI_JUDUL_BERITA.ipynb` → Training, evaluasi, analisis performa model
 * `02_UAP_DASHBOARD_BERITA.ipynb` → Demo prediksi kategori judul berita baru
-
-### 2️⃣ Streamlit Dashboard
-
-```bash
-streamlit run app.py
-```
-
-* Upload file `.txt` berisi judul berita
-* Pilih model: LSTM, DistilBERT, atau IndoBERT
-* Lihat prediksi kategori secara real-time
-
-#### Tampilan Dashboard:
-
-![Dashboard Streamlit](<img width="1315" height="514" alt="image" src="https://github.com/user-attachments/assets/a880ec3b-5106-4141-856f-e700f27fdb6b" />
-)
-*Ganti dengan screenshot asli dashboard Streamlit di folder `screenshots`*
-
----
+* 
 
 ## 📈 Evaluasi Model
 
