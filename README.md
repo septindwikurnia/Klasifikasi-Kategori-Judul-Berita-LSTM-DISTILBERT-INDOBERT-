@@ -100,7 +100,7 @@ kategori_urls = {
 1. Clone repository:
 
 ```bash
-git clone https://github.com/septindwikurnia/Klasifikasi_Kategori_Berita.git
+git clone https://github.com/septindwikurnia/Klasifikasi-Kategori-Judul-Berita-LSTM-DISTILBERT-INDOBERT-.git
 cd Klasifikasi-Kategori-Judul-Berita-LSTM-DISTILBERT-INDOBERT-
 ```
 
