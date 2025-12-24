@@ -58,6 +58,8 @@ Klasifikasi_Kategori_Berita/
 │  └─ 02_UAP_DASHBOARD_BERITA.ipynb
 │
 └─ README.md
+│
+└─ app.py
 ```
 
 ---
@@ -135,6 +137,44 @@ pip install -r requirements.txt
 | IndoBERT   | 91%     | Training paling lama, akurasi tertinggi; mampu memahami konteks bahasa Indonesia secara menyeluruh.    |
 
 ---
+
+Siap 👍
+Berikut **tambahan keterangan khusus untuk `app.py`** yang **bisa langsung kamu tempel di README.md** (gaya bahasa konsisten & profesional, tanpa mengubah bagian lain).
+
+---
+
+## 🖥️ Streamlit Dashboard (`app.py`)
+
+Selain melalui Jupyter Notebook, sistem ini juga menyediakan **dashboard interaktif berbasis Streamlit** untuk melakukan prediksi kategori judul berita secara langsung.
+
+### 📌 Deskripsi `app.py`
+
+File `app.py` merupakan aplikasi dashboard yang memungkinkan pengguna untuk:
+
+* Memasukkan judul berita secara manual
+* Memilih model klasifikasi:
+
+  * **LSTM**
+  * **DistilBERT**
+  * **IndoBERT**
+* Melihat hasil prediksi kategori berita secara real-time
+* Menggunakan model yang sudah dilatih tanpa perlu retraining
+
+---
+
+### ▶️ Menjalankan Dashboard
+
+Pastikan seluruh dependency telah terinstal dan model tersedia, kemudian jalankan perintah berikut dari root project:
+
+```bash
+streamlit run app.py
+```
+
+Setelah dijalankan, dashboard dapat diakses melalui browser pada alamat:
+
+```
+http://localhost:8501
+```
 
 ## ⚠️ Catatan
 
