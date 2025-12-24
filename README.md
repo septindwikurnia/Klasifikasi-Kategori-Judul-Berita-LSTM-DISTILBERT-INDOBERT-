@@ -138,6 +138,15 @@ pip install -r requirements.txt
 
 ---
 
+### 📊 Tabel Analisis Perbandingan Model
+
+| Nama Model | Akurasi | Hasil Analisis                                                                                 |
+| ---------- | ------- | ---------------------------------------------------------------------------------------------- |
+| LSTM       | 84%     | Cocok untuk dataset berukuran sedang, membutuhkan waktu training lebih lama.                   |
+| DistilBERT | 90%     | Ringan, cepat, akurasi tinggi; cocok untuk prediksi real-time.                                 |
+| IndoBERT   | 91%     | Akurasi terbaik, mampu menangkap konteks bahasa Indonesia lebih baik, tapi ukuran model besar. |
+
+---
 
 ## ⚠️ Catatan
 
