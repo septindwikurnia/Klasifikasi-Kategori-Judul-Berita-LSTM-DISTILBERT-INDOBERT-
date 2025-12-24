@@ -126,19 +126,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📈 Evaluasi Model
-
-| Model      | Akurasi |
-| ---------- | ------- |
-| LSTM       | 84%     |
-| DistilBERT | 90%     |
-| IndoBERT   | 91%     |
-
-> Hasil akurasi dapat bervariasi tergantung preprocessing, tokenisasi, dan jumlah data.
-
----
-
-### 📊 Tabel Analisis Perbandingan Model
+### 📈 Hasil Evaluasi & Analisis Perbandingan Model
 
 | Nama Model | Akurasi | Hasil Analisis                                                                                         |
 | ---------- | ------- | -------------------------------------------------------------------------------------------------------|
