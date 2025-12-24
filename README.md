@@ -100,8 +100,8 @@ kategori_urls = {
 1. Clone repository:
 
 ```bash
-git clone https://github.com/username/Klasifikasi_Kategori_Berita.git
-cd Klasifikasi_Kategori_Berita
+git clone https://github.com/septindwikurnia/Klasifikasi_Kategori_Berita.git
+cd Klasifikasi-Kategori-Judul-Berita-LSTM-DISTILBERT-INDOBERT-
 ```
 
 2. Install dependencies (disarankan menggunakan virtual environment):
